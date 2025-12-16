@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <head>
+    <style>
+        /* Seu código CSS vai aqui */
+        body {
+            background-color: rgb(252, 254, 254);
+        }
+        
+        .login-form {
+    /* Define a largura máxima, diminuindo o formulário */
+    max-width: 400px; 
+    /* Você pode usar 'width: 80%;' se preferir uma porcentagem */
+    
+    /* Outros estilos que você já deve ter: */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+.login-form {
+    max-width: 400px; 
+    
+    /* 1. Define 0px de margem em cima e embaixo */
+    /* 2. Define 'auto' para as margens laterais */
+    /* Isso distribui o espaço restante igualmente entre os lados, centralizando o elemento. */
+    margin: 0 auto; 
+    
+    padding: 20px;
+    /* ... outros estilos ... */
+}
+h1{
+max-width: 400px;
+ margin: 0 auto; 
+    
+    padding: 20px;
+}
+button{
+    margin-top: 15px;
+}
+    </style>
+    
+</head>
+    <h1>Formulário de Login</h1>
+        <form class="login-form">
+        <form>
+    <fieldset class="grupo-de-informacoes">
+        
+        <legend><p style="color:blue; font-size:20px ;">informe seu e-mail e senha</p></legend>        
+        <div class="input-group">
+           <p><h3><label for="user">E-mail:</label></h3></p>
+            <input type="text" id="user" name="user" required>
+        </div>
+       <margin: 20px;>           
+        <div class="input-group">
+           <p><h3><label for="pass">Senha:</label></h3></p>
+            <input type="password" id="pass" name="pass" required>
+        </div>       
+    </fieldset>           
+    <button type="submit">Efetuar Login</button>
+    <button type="submit">Cancelar</button>
+    </form>
+</body>
+</html>

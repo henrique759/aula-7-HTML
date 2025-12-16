@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Envie Mensagem</title>
+    <style>
+        /* (Aqui vai todo o CSS corrigido acima) */
+        body { padding: 10px;
+            max-width: 450px; 
+            margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);/* ...estilos... */ 
+}
+        .form-container { /* ...estilos... */ }
+        .input-group { /* ...estilos... */ }
+        input[type="text"], input[type="email"], input[type="tel"] { /* ...estilos... */ }
+        .caixa-maior { /* ...estilos... */ } /* ESTE É O SELETOR QUE AUMENTA A CAIXA! */
+        .botao-sim, .botao-nao { /* ...estilos... */ }
+        /* ...e o restante dos seus estilos de botão... */
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h3>Envie uma mensagem preenchendo o formulário abaixo</h3>
+        
+        <div class="input-group">  
+            <label for="nome">Seu Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+        </div> 
+        
+        <div class="input-group">  
+            <label for="telefone">Seu Telefone:</label>
+            <input type="tel" id="telefone" name="telefone" required>
+        </div>  
+        
+        <div class="input-group">  
+            <label for="email">Seu E-mail:</label>
+            <input type="email" id="email" name="email" required>
+        </div> 
+        
+        <div class="input-group">
+            <label>Deseja receber nossas novidades?:</label> 
+            <button type="button" class="botao-sim">Sim</button>
+            <button type="button" class="botao-nao">Não</button>          
+        </div> 
+        
+        <div class="input-group">  
+            <label for="mensagem">Sua mensagem:</label>
+            <textarea id="mensagem" name="mensagem" class="caixa-maior" required></textarea>
+        </div> 
+        <button type="button" class="botao-nao">Enviar</button>
+</body>
+</html>
